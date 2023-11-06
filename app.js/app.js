@@ -30,8 +30,6 @@ function suma(a, b){
     alert(resultado)
 }
 
-alert(registro)
-
 while(registro.edad>=15){
     const seleccion = parseInt(prompt("Seleccione que tipo de operacion requiere hacer: 1)Sumar, 2)Restar, 3)Dividir, 4)Multiplicar, 5) Detener Calculadora"))
     if(seleccion === 1){
