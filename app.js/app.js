@@ -3,7 +3,6 @@ let registro = {
     edad: 0,
     nit: 0,
 }
-
 //Calculadora
 
 
@@ -13,9 +12,9 @@ for (let i = 1; i <= 10; i++) {
     let nombrei = prompt("Ingresa tu nombre");
     let edadi = parseInt(prompt("Ingresa tu edad (Recuerda que debes ser mayor de 15 años para hacer uso de este servicio)"));
     let niti = parseInt(prompt("Ingresa tu Numero de identificacion"));
+    let validacion = /^[a-zA-Z]+$/;
 
-    if (nombrei !== "" && !isNaN(edadi) && edadi >= 0 && edadi <= 100 && !isNaN(niti)) {
-
+    if (validacion.test(nombrei) && nombrei!== "" && !isNaN(edadi) && edadi >= 0 && edadi <= 100 && !isNaN(niti)) {
         registro.nombre = nombrei;
         registro.edad = edadi;
         registro.nit = niti;
